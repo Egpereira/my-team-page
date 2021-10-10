@@ -57,10 +57,73 @@ table {
   box-sizing: border-box;
 }
 
+.my-team__page {
+  padding: 1.5rem 1rem;
+  color: #000;
+}
+.my-team__title {
+  font-family: "PT Serif", serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.my-team__description {
+  font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+}
+.my-team__description h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.my-team__description p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.my-team__members {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-team__members div {
+  display: flex;
+  max-width: 50%;
+  padding-top: 0.75rem;
+}
+.my-team__members div:nth-child(odd) {
+  padding-right: 0.75rem;
+}
+.my-team__members div:nth-child(even) {
+  padding-left: 0.75rem;
+  margin-top: 4rem;
+}
+.my-team__members img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.my-team__members figcaption {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.my-team__members p {
+  font-family: "PT Serif", serif;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  margin-left: 0.5rem;
+}
+
 .footer {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
   color: #575757;
   margin-top: auto;
+}
+.footer__link {
+  font-weight: bold;
 }
