@@ -1,0 +1,10 @@
+@import "./reset";
+@import "./colors";
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: $gray;
+  margin-top: auto;
+}
