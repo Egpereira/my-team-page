@@ -5,13 +5,20 @@
   &__page {
     padding: 1.5rem 1rem;
     color: $main-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &__content-text {
+    margin-top: 2rem;
   }
 
   &__title {
     font-family: 'PT Serif', serif;
     font-size: 2.25rem;
     font-weight: bold;
-    margin-top: 2rem;
   }
 
   &__description {
@@ -83,5 +90,96 @@
 
   &__link {
     font-weight: bold;
+
+    &:focus {
+      outline: 2px solid $black;
+      outline-offset: 2px
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .my-team {
+    &__content {
+      max-width: 960px;
+    }
+
+    &__content-text {
+      display: flex;
+      justify-content: space-between;
+
+      & > * {
+        max-width: 45%;
+      }
+    }
+
+    &__description {
+      margin-top: 0;
+
+      p {
+        font-size: 1.125rem;
+      }
+    }
+
+    &__members {
+      div {
+        max-width: 33%;
+        padding-top: 2rem;
+
+        &:nth-child(even) {
+          margin-top: 0;
+        }
+
+        &:nth-child(3n+2) {
+          padding: 0 0.375rem;
+          margin-top: 6rem;
+        }
+
+        &:nth-child(3n+1) {
+          padding-right: 0.75rem;
+        }
+
+        &:nth-child(3n) {
+          padding-left: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .my-team {
+    &__page {
+      padding-top: 5rem;
+    }
+
+    &__members {
+      div {
+        &:nth-child(even) {
+          margin-top: 0;
+        }
+
+        &:nth-child(3n+2) {
+          padding: 0 1.5rem;
+          margin-top: 8rem;
+        }
+
+        &:nth-child(3n+1) {
+          padding-right: 3rem;
+        }
+
+        &:nth-child(3n) {
+          padding-left: 3rem;
+        }
+
+        figcaption {
+          font-size: 1.125rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
   }
 }
